@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ggBackground" format="color" />
+    <attr name="ggSurface" format="color" />
+    <attr name="ggTextPrimary" format="color" />
+</resources>

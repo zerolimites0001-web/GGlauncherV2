@@ -1,0 +1,2 @@
+-keep class com.gglauncher.** { *; }
+-dontwarn kotlinx.coroutines.**

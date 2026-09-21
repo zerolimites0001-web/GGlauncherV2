@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_names">
+        <item>AMOLED</item>
+        <item>Escuro</item>
+        <item>Claro</item>
+        <item>Sistema</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>amoled</item>
+        <item>dark</item>
+        <item>light</item>
+        <item>system</item>
+    </string-array>
+</resources>
