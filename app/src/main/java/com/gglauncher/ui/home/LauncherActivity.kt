@@ -15,6 +15,7 @@ import com.gglauncher.databinding.ActivityLauncherBinding
 import com.gglauncher.theming.ThemeManager
 import com.gglauncher.ui.drawer.DrawerBottomSheet
 import com.gglauncher.util.AppLauncher
+import com.gglauncher.util.SwipeListener
 import kotlinx.coroutines.launch
 
 class LauncherActivity : AppCompatActivity() {
@@ -33,7 +34,7 @@ class LauncherActivity : AppCompatActivity() {
         binding.root.background = null
 
         // Swipe up = abre gaveta
-        binding.root.setOnTouchListener(object : util.SwipeListener(this) {
+        binding.root.setOnTouchListener(object : SwipeListener(this) {
             override fun onSwipeUp() { DrawerBottomSheet().show(supportFragmentManager, "drawer") }
             override fun onSwipeDown() { expandNotifications() }
         })
