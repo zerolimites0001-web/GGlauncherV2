@@ -70,7 +70,7 @@ class LauncherActivity : AppCompatActivity() {
         // Auto-arruma: colunas conforme orientação atual
         binding.workspace.columnCount = if (resources.configuration.orientation == android.content.res.Configuration.ORIENTATION_LANDSCAPE) 6 else 4
         binding.workspace.removeAllViews()
-        val byComp = AppRepository.getCached().associateBy { it.componentName }
+        val byComp = AppRepository.cached.associateBy { it.componentName }
         items.forEachIndexed { idx, item ->
             val app = byComp[item.component] ?: return@forEachIndexed
             val view = layoutInflater.inflate(com.gglauncher.R.layout.item_app, binding.workspace, false)

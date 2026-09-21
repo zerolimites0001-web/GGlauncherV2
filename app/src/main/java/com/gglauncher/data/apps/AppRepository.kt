@@ -71,8 +71,6 @@ object AppRepository {
         out
     }
 
-    fun getCached(): List<AppModel> = cached
-
     fun filter(query: String): List<AppModel> {
         if (query.isBlank()) return cached
         val q = unaccent(query.lowercase().trim())

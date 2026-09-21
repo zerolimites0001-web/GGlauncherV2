@@ -49,7 +49,7 @@ class DrawerBottomSheet : BottomSheetDialogFragment() {
         b.drawerRecycler.setHasFixedSize(true)
         b.drawerRecycler.setItemViewCacheSize(24)
         b.drawerRecycler.adapter = adapter
-        adapter.submit(AppRepository.getCached())
+        adapter.submit(AppRepository.cached)
 
         b.drawerSearch.addTextChangedListener(object : android.text.TextWatcher {
             override fun beforeTextChanged(a: CharSequence?, b1: Int, c1: Int, d1: Int) {}
