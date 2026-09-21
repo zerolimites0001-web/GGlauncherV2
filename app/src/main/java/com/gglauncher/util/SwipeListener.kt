@@ -1,4 +1,4 @@
-package com.gglauncher.ui.home
+package com.gglauncher.util
 
 import android.content.Context
 import android.view.GestureDetector
